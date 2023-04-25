@@ -1,0 +1,3 @@
+https://github.com/HynekPetrak/javascript-malware-collection
+
+https://www.sri.inf.ethz.ch/js150
