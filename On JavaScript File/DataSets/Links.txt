@@ -1,0 +1,9 @@
+Drive link : (after preprocessed)
+https://drive.google.com/drive/folders/10thVwipZBXw1RZ6JrUyGO4buSDcweSOz?
+usp=drive_link
+
+github lisk: 
+https://github.com/HynekPetrak/javascript-malware-collection
+
+SRI Lab link:
+https://www.sri.inf.ethz.ch/js150
