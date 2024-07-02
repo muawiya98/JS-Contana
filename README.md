@@ -38,38 +38,40 @@
 
 ## 3. Papers and References
 
-	- [Paper 1 JSContana: Malicious JavaScript detection using adaptable context analysis and key feature extraction](https://www.sciencedirect.com/science/article/abs/pii/S0167404821000420)
-	- [Paper 2 Dynamic feature selection model for adaptive cross site scripting attack detection using developed multi-agent deep Q learning model](https://www.sciencedirect.com/science/article/pii/S1319157823000204)
+	- Paper 1 JSContana: Malicious JavaScript detection using adaptable context analysis and key feature extraction (https://www.sciencedirect.com/science/article/abs/pii/S0167404821000420)
+	- Paper 2 Dynamic feature selection model for adaptive cross site scripting attack detection using developed multi-agent deep Q learning model (https://www.sciencedirect.com/science/article/pii/S1319157823000204)
 
 ## 4. Applied Techniques
 
-	- Technique 1 Deep Learning Model: [Building a large neural network containing various layers (Bi-LSTM, CNN, FCN) (Deep Learning)]
-	- Technique 2 Feature extraxtion: [Extract the hidden state from Bi-LSTM layers and combine them (Math & ML)]
-	- Technique 3 DFS: [Dynamic feature selection model for adaptive cross site scripting attack detection (Reinforcmentr Learning)]
-	- Technique 4 Ensemble Learning: [Stacking Ensemble Learning (ML)]
-	- Technique 5 FS-1: [Feature Selection by extract statistical information (Math & ML)]
-	- Technique 6 FS-2: [Feature Selection by Tabu Search Learning (Optimization)]
-	- Technique 7 FS-3: [Feature Selection by traditional sklearn models (ML)]
+	- Technique 1 Deep Learning Model: Building a large neural network containing various layers (Bi-LSTM, CNN, FCN) (Deep Learning)
+	- Technique 2 Feature extraxtion: Extract the hidden state from Bi-LSTM layers and combine them (Math & ML)
+	- Technique 3 DFS: Dynamic feature selection model for adaptive cross site scripting attack detection (Reinforcmentr Learning)
+	- Technique 4 Ensemble Learning: Stacking Ensemble Learning (ML)
+	- Technique 5 FS-1: Feature Selection by extract statistical information (Math & ML)
+	- Technique 6 FS-2: Feature Selection by Tabu Search Learning (Optimization)
+	- Technique 7 FS-3: Feature Selection by traditional sklearn models (ML)
 
 ## 5. Methodology
 
-	1. **Data Collection and Preprocessing:** [We collected 4,000 non-attack JavaScript files and 4,000 XSS attack files, then rendered
-	them as structured data. Then we deleted the URL's and the IP's from them. Then we performed a
-	grammatical analysis process to obtain Syntactic unit sequences with detailed information. Finally
-	we converted it to static word vectors.
-	We collected 4,000 payload files that contain an XSS attack and 4,000 files that do not
-	contain an attack, then we decode them, then we perform the Generalization process, where we
-	convert each number or series of numbers to the number 0 and each link to "http://u" and then we
-	After that we did the segmentation process. Finally, we converted it to static word vectors.]
+	1. **Data Collection and Preprocessing:** 
+	 	We collected 4,000 non-attack JavaScript files and 4,000 XSS attack files, then rendered
+		them as structured data. Then we deleted the URL's and the IP's from them. Then we performed a
+		grammatical analysis process to obtain Syntactic unit sequences with detailed information. Finally
+		we converted it to static word vectors.
+		We collected 4,000 payload files that contain an XSS attack and 4,000 files that do not
+		contain an attack, then we decode them, then we perform the Generalization process, where we
+		convert each number or series of numbers to the number 0 and each link to "http://u" and then we
+		After that we did the segmentation process. Finally, we converted it to static word vectors.]
 
-	2. **Model Training:** [we have trained a deep learning model to classify JavaScript files (and
-	payload files), where 0 indicates that the file does not contain an attack and 1 indicates that the file
-	has an attack. The figure below shows the structure of the model. We give the Embedding layer
-	the following parameters (vocab_size=500000, embedding_dim=512, input_length=2048) and for
-	the Bidirectional layer (units=50, input_shape=(None, 50), return_sequences=True) for both
-	layers. As for the four layers of Conv1D (filters=128, activation='tanh'), but they differ from each
-	other in kernel_size, where we give the first layer 7, the second 15, the third 25, and the fourth 35. Finally the fullyConnectedLayer. for the first layer (units=64, activation ='relu') and for the output
-	layer (units=1, activation='sigmoid')]
+	2. **Model Training:** 
+	 	we have trained a deep learning model to classify JavaScript files (and
+		payload files), where 0 indicates that the file does not contain an attack and 1 indicates that the file
+		has an attack. The figure below shows the structure of the model. We give the Embedding layer
+		the following parameters (vocab_size=500000, embedding_dim=512, input_length=2048) and for
+		the Bidirectional layer (units=50, input_shape=(None, 50), return_sequences=True) for both
+		layers. As for the four layers of Conv1D (filters=128, activation='tanh'), but they differ from each
+		other in kernel_size, where we give the first layer 7, the second 15, the third 25, and the fourth 35. Finally the fullyConnectedLayer. for the first layer (units=64, activation ='relu') and for the output
+		layer (units=1, activation='sigmoid')]
 
 
 ## 6. Results
