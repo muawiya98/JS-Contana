@@ -61,7 +61,7 @@
 		We collected 4,000 payload files that contain an XSS attack and 4,000 files that do not
 		contain an attack, then we decode them, then we perform the Generalization process, where we
 		convert each number or series of numbers to the number 0 and each link to "http://u" and then we
-		After that we did the segmentation process. Finally, we converted it to static word vectors.]
+		After that we did the segmentation process. Finally, we converted it to static word vectors.
 
 	2. **Model Training:** 
 	 	we have trained a deep learning model to classify JavaScript files (and
@@ -71,7 +71,7 @@
 		the Bidirectional layer (units=50, input_shape=(None, 50), return_sequences=True) for both
 		layers. As for the four layers of Conv1D (filters=128, activation='tanh'), but they differ from each
 		other in kernel_size, where we give the first layer 7, the second 15, the third 25, and the fourth 35. Finally the fullyConnectedLayer. for the first layer (units=64, activation ='relu') and for the output
-		layer (units=1, activation='sigmoid')]
+		layer (units=1, activation='sigmoid')
 
 
 ## 6. Results
